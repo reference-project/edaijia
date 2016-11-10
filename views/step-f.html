@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e代驾</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/public.css">
+    <link rel="stylesheet" href="static/css/other.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/fastclick.js"></script>
+    <script src="static/js/jquery.tap.min.js"></script>
+    <script src="static/js/sound.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <meta name="viewport" id="viewport" content="width=640, user-scalable=no">
+</head>
+<body>
+    <div class="wrapper auto">
+        <div class="step-f-bg">
+            <div class="phone"><img src="static/images/other/phone.png" alt=""></div>
+            <div class="hand"><img src="static/images/other/hand.png" alt="" /></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+            // play('../sound/8.mp3',function(){
+                $('.phone,.hand').addClass('begin');
+                setTimeout(function(){
+                    $('body').tap(function(){
+                        location.href = 'step-g.html';
+                    });
+                },1000);
+            // },33);
+        };
+    </script>
+    <script src="static/js/share.js?v=1"></script>
+</body>
+</html>
